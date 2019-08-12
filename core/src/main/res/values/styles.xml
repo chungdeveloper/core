@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SwitchButtonMD" tools:ignore="ResourceName">
+        <item name="kswThumbDrawable">@drawable/ksw_md_thumb</item>
+        <item name="kswBackColor">@color/ksw_md_back_color</item>
+        <item name="kswThumbRangeRatio">1.45</item>
+        <item name="kswThumbMarginLeft">-16dp</item>
+        <item name="kswThumbMarginTop">-14dp</item>
+        <item name="kswThumbMarginRight">-16dp</item>
+        <item name="kswThumbMarginBottom">-14dp</item>
+        <item name="kswThumbWidth">@dimen/ksw_md_thumb_ripple_size</item>
+        <item name="kswThumbHeight">@dimen/ksw_md_thumb_ripple_size</item>
+    </style>
+
+    <style name="SwitchButtonIOSStyle" parent="SwitchButtonStyle" tools:ignore="ResourceName">
+        <item name="kswAnimationDuration">200</item>
+        <item name="kswBackDrawable">@drawable/ios_back_drawable</item>
+        <item name="kswThumbDrawable">@drawable/ios_thumb_selector</item>
+        <item name="kswThumbMarginLeft">-5dp</item>
+        <item name="kswThumbMarginTop">-2.5dp</item>
+        <item name="kswThumbMarginRight">-5dp</item>
+        <item name="kswThumbMarginBottom">-8dp</item>
+        <item name="kswThumbRangeRatio">1.4</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="SwitchButtonStyleMD" parent="SwitchButtonMD">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Crop" />
+
+    <style name="Crop.DoneCancelBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/crop__divider</item>
+        <item name="android:showDividers" tools:ignore="NewApi">middle</item>
+        <item name="android:dividerPadding" tools:ignore="NewApi">12dp</item>
+        <item name="android:background">@color/crop__button_bar</item>
+    </style>
+
+    <style name="Crop.ActionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/crop__selectable_background</item>
+    </style>
+
+    <style name="Crop.ActionButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">20dp</item>
+        <!-- Offsets left drawable -->
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Done">
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+        <item name="android:text">@string/crop__done</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Cancel">
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+        <item name="android:text">@string/crop__cancel</item>
+    </style>
+
+
+    <style name="tvWhite14">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvWhite14Single" parent="tvWhite14">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvWhite13Single" parent="tvWhite13">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvWhite12Single" parent="tvWhite12">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="tvWhite13Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="tvWhite10Single" parent="tvWhite10">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvWhite16Single" parent="tvWhite16">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvBlack16Single" parent="tvBlack16">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvBlack14Single" parent="tvBlack14">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvBlack12Single" parent="tvBlack12">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvBlack13Single" parent="tvBlack13">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvBlack10Single" parent="tvBlack10">
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="tvWhite14Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvWhite12Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvWhite11Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_11</item>
+    </style>
+
+    <style name="tvWhite16">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="tvWhite18">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="tvWhite18Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="tvWhite16Shadow" parent="shadowBlack">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="tvWhite13">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="tvWhite8">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="tvWhite10">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="tvBlack14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvBlack16">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="tvBlack18">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="tabSettingTitle">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/second_title</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+    </style>
+
+    <style name="tabSettingChild">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_editext</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tabSettingChildZero">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_editext</item>
+        <item name="android:padding">@dimen/zero_0dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tvBlack13">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="tvBlack12">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvGray12">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvGray13">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="tvGray14">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvGray16">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="tvGray10Single">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="tvGray12Single">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvGray13Single">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="btn13Gray" parent="tvGray13">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn13Black" parent="tvBlack13">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn13White" parent="tvWhite13">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn14Gray" parent="tvGray14">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn14Black" parent="tvBlack14">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn14White" parent="tvWhite14">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn12Gray" parent="tvGray12">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn12Black" parent="tvBlack12">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn12White" parent="tvWhite12">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn16Black" parent="tvBlack16">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn16White" parent="tvWhite16">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="tvGray14Single">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvGray10">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="tvBlack10">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="tvBlack14Shadow" parent="shadowWhite">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvButtonWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvButtonWhite18">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="tvButtonWhite10">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="tvButtonWhite14">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="tvWhite12">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvWhite12Hint">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="tvGray14Shadow" parent="shadowWhite">
+        <item name="android:textColor">@color/app_text_gray_default</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="shadowWhite">
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="shadowBlack">
+        <item name="android:shadowColor">@color/black_transparent</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogChatTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.FromRight.Window</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.SlideRight.Window</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@color/black_transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogThemeFromTop" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.SlideRight.Window</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@color/black_transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogThemeFromRight" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.FromRight.Window</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@color/black_transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogThemeFromBottom" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.SlideBottom.Window</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@color/black_transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogCenterView" parent="@android:style/Theme.Panel">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/black_transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DialogCustomWebViewTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogAnimation.SlideRight.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/animation_move_in_from_right</item>
+        <item name="android:windowExitAnimation">@anim/animation_move_out_to_right</item>
+    </style>
+
+    <style name="DialogAnimation.FromRight.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/animation_move_in_from_right_dialog</item>
+        <item name="android:windowExitAnimation">@anim/animation_move_out_to_right</item>
+    </style>
+
+    <style name="DialogAnimation.SlideBottom.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/animation_move_in_from_bottom_dialog</item>
+        <item name="android:windowExitAnimation">@anim/animation_move_out_to_bottom_dialog</item>
+    </style>
+
+    <style name="RoundedImageButton">
+        <item name="android:layout_width">@dimen/call_buttons_diameter</item>
+        <item name="android:layout_height">@dimen/call_buttons_diameter</item>
+        <item name="android:padding">@dimen/call_buttons_padding</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <dimen name="call_buttons_padding">16dp</dimen>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SeekBarPreferenceTitle" parent="WrapContent">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WeightWidth">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="WeightHeight">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ListItem" parent="MatchWidth">
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="tvWhiteTutorial" parent="tvWhite14Shadow">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="checkboxWhite" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+</resources>

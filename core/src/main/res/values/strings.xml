@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AndroidUtility</string>
+
+    <!--Crop Image String!-->
+    <string name="crop__saving">Đang lưu</string>
+    <string name="crop__wait">Đang xử lý</string>
+    <string name="crop__pick_error">Crop Image Success</string>
+    <string name="crop__done">Done</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">Cancel</string>
+    <string name="get_photo_fail">Cắt ảnh thất bại</string>
+    <string name="title_photo_choose">Chọn ảnh từ</string>
+    <string name="chooese_camera">Chọn ảnh từ Camera</string>
+    <string name="chooese_gallery">Chọn ảnh từ Thư viện</string>
+    <string name="gps_setting">Bạn có muốn kích hoạt GPS không?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="camera_not_found">Không tìm thấy Camera</string>
+    <string name="gallery_not_found">Không tìm thấy bộ sưu tập</string>
+    <string name="just_now">Ngay bây giờ</string>
+    <string name="yesterday_at">Hôm qua</string>
+    <string name="at">lúc</string>
+    <string name="hours">giờ</string>
+    <string name="hour">giờ</string>
+    <string name="ago">trước</string>
+    <string name="minutes">phút</string>
+    <string name="minute">phút</string>
+</resources>

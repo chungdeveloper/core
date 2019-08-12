@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+
+    <color name="transparent_black_new">#cc0d0909</color>
+    <color name="second_title">#eaebed</color>
+    <color name="background_body">#eeeeee</color>
+    <color name="background_item">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#29ffffff</color>
+    <color name="white_transparent_search">#37ffffff</color>
+    <color name="white_transparent_footer">#d8ffffff</color>
+    <color name="black">#000000</color>
+    <color name="description_color">#666666</color>
+    <color name="item_blue_icon">#00cccc</color>
+    <color name="item_footer_clicked">#db2069</color>
+    <color name="item_footer_white">#ffffff</color>
+    <color name="blue_fb">#3b5998</color>
+    <color name="notification">#ee0303</color>
+    <color name="black_transparent">#4c000000</color>
+    <color name="black_transparent_heavy">#a5000000</color>
+    <color name="start_color_background">#37000000</color>
+    <color name="background_footer">#191919</color>
+    <color name="line">#ededed</color>
+    <color name="app_text_gray_default">#585858</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="color_footer">#37922e</color>
+    <color name="menu_normal">#666666</color>
+    <color name="menu_normal_focus">#282828</color>
+</resources>

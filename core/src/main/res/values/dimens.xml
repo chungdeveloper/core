@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+
+    <dimen name="crop__bar_height">56dp</dimen>
+
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+    <!--font size-->
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tab_layout_height">45dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_25dp">25dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+    <dimen name="padding_40dp">40dp</dimen>
+    <dimen name="value_15dp">15dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="thin_line">0.5dp</dimen>
+    <dimen name="zero_0dp">0dp</dimen>
+    <dimen name="progressbar_size">40dp</dimen>
+    <dimen name="progressbar_size_small">16dp</dimen>
+    <dimen name="shadow_height">2dp</dimen>
+    <item name="x_scale_factor" format="float" type="dimen">2.3</item>
+    <item name="y_scale_factor" format="float" type="dimen">2.3</item>
+
+    <dimen name="top_fragment_height">200dp</dimen>
+    <dimen name="dimen12">12dp</dimen>
+    <dimen name="toggle_button_params">64dp</dimen>
+    <dimen name="call_buttons_diameter">64dp</dimen>
+    <dimen name="element_fragment_margin">30dp</dimen>
+    <dimen name="margin_common">20dp</dimen>
+    <dimen name="text_size_ringing">16dp</dimen>
+    <dimen name="action_bar_height">20dp</dimen>
+    <dimen name="also_in_call_text_left_right_padding">10dp</dimen>
+    <dimen name="padding_bottom">10dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="income_call_buttons_margin">30dp</dimen>
+
+    <!--tutorial-->
+    <dimen name="tutorial_dash_width">80.67dp</dimen>
+    <dimen name="tutorial_dash_height">56.33dp</dimen>
+    <dimen name="tutorial_arrow_width">85dp</dimen>
+    <dimen name="tutorial_arrow_height">20.67dp</dimen>
+    <!---->
+
+    <dimen name="value_5dp">5dp</dimen>
+    <dimen name="value_8dp">8dp</dimen>
+
+    <dimen name="crop_bar_height">56dp</dimen>
+
+    <dimen name="action_button_size">80dp</dimen>
+    <dimen name="action_button_content_margin">16dp</dimen>
+    <dimen name="action_button_margin">12dp</dimen>
+    <dimen name="action_menu_radius">96dp</dimen>
+
+    <dimen name="sub_action_button_size">50dp</dimen>
+    <dimen name="sub_action_button_content_margin">6dp</dimen>
+
+    <dimen name="red_action_button_size">108dp</dimen>
+    <dimen name="red_action_button_margin">48dp</dimen>
+
+    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_content_margin">36dp</dimen>
+
+    <dimen name="red_action_menu_radius">96dp</dimen>
+    <dimen name="blue_sub_action_button_size">48dp</dimen>
+    <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
+
+    <dimen name="radius_large">120dp</dimen>
+    <dimen name="radius_small">30dp</dimen>
+    <dimen name="radius_medium">72dp</dimen>
+    <dimen name="keyboard_height">250dp</dimen>
+
+    <dimen name="midi_height">100dp</dimen>
+    <dimen name="text_size_count_down">56sp</dimen>
+
+    <dimen name="header_height">52dp</dimen>
+
+    <dimen name="menu_margin">45.67dp</dimen>
+    <dimen name="dimen47">47dp</dimen>
+    <dimen name="dimen_icon_mess">35dp</dimen>
+    <dimen name="dimen_search_height">40dp</dimen>
+
+</resources>
